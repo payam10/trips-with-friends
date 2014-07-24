@@ -1,3 +1,11 @@
+body {
+	background-image: url(http://p1.pichost.me/i/41/1647781.jpg);
+	background-position: center top;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+}
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -13,3 +21,4 @@
  *= require_tree .
  *= require_self
  */
+
