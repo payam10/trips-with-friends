@@ -1,0 +1,17 @@
+<div class="user_form">
+	<%= form_for @user do |f| %>
+		
+		<%= f.label :name, "Name" %><br/>
+		<%= f.text_field :name, placeholder: "Payam Pakmanesh" %><br>
+		
+		<%= f.label :email, "Email" %><br/>
+		<%= f.text_field :email, placeholder: "p.pakmanesh@gmail.com" %><br>
+
+
+		<%= f.label :password, "Password" %><br/>
+		<%= f.text_field :password, placeholder: "parks123" %><br>
+
+		<%= f.submit "Submit" %>
+	<% end %>
+</div>
+
