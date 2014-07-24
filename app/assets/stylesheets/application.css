@@ -11,7 +11,7 @@ body {
 	text-align: center;
 	margin: 10% 0 0 40%;
 	width: 20%;
-	opacity: 0.7;
+	opacity: 0.6;
 }
 
 /*
@@ -22,16 +22,28 @@ bottom margin is 75px
 left margin is 100px
 */
 
-#nav h1 {
+#nav li {
 	border: solid white;
+	background-color: black;
 	padding: 10px;
 	font-size: 25px;
+	list-style-type: none;
+	margin: 10% 0 0 0;
 }
 
-#nav h1:hover {
-	opacity: 0.5;
-	margin: 1% 1% 1% 1%;
 
+#nav ul {
+	padding: 10px;
+}
+
+#nav a {
+	color: white;
+	text-decoration: none;
+}
+
+#nav li:hover {
+	opacity: 0.3;
+	/*margin: 1% 1% 1% 1%;*/
 }
 
 /*
