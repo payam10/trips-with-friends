@@ -24,10 +24,14 @@ left margin is 100px
 
 #nav h1 {
 	border: solid white;
+	padding: 10px;
+	font-size: 25px;
 }
 
 #nav h1:hover {
 	opacity: 0.5;
+	margin: 1% 1% 1% 1%;
+
 }
 
 /*
