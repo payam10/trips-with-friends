@@ -6,6 +6,30 @@ body {
 	background-attachment:fixed;
 }
 
+#nav {
+	color: #fff;
+	text-align: center;
+	margin: 10% 0 0 40%;
+	width: 20%;
+	opacity: 0.7;
+}
+
+/*
+margin: 25px 50px 75px 100px;
+top margin is 25px
+right margin is 50px
+bottom margin is 75px
+left margin is 100px
+*/
+
+#nav h1 {
+	border: solid white;
+}
+
+#nav h1:hover {
+	opacity: 0.5;
+}
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
