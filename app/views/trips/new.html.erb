@@ -1,12 +1,11 @@
 <div class="trip_form">
-	<%= form_for [@user, @trip] do |f| %>  
+	<%= form_for [@user, @trip] do |f| %> <!-- Need @user to designate who the trip is being created for? -->
 		
 		<%= f.label :where, "Where?" %><br/>
 		<%= f.text_field :where, placeholder: "Hawaii" %><br>
 		
 		<%= f.label :when, "When?" %><br/>
 		<%= f.text_field :when, placeholder: "#" %><br>
-
 
 		<%= f.label :price_per_person, "Price per person? (Approximately)" %><br/>
 		<%= f.text_field :price_per_person, placeholder: "$550" %><br>

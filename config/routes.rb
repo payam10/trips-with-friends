@@ -8,10 +8,6 @@ Rails.application.routes.draw do
 
   get '/sessions/login/users' => 'sessions#users_login', as: :users_login #change route?
 
-
-  # post '/trips/create' => 'trips#create', as: :create_user_trip
-
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

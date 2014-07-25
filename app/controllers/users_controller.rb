@@ -17,9 +17,9 @@ class UsersController < ApplicationController
 		# puts '$' * 100
 		@user = User.create(user_params)
 		if @user.save!
-			session[@user.id] = @user.id
+			session[:id] = @user.id
 			puts '$' * 100
-			puts session[@user.id]
+			puts session[:id]
 			puts '$' * 100
 
 			redirect_to new_user_trip_path(@user.id) #take user to the 'create a trip' page 

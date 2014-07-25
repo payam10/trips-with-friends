@@ -1,13 +1,18 @@
 class TripsController < ApplicationController
 	
 	def new
-		@user = User.find(1) #change to reflect whoever is signed in using sessions
+		@user = User.find(session[:id]) #change to reflect whoever is signed in using sessions
 		@trip = Trip.new 
 	end
 
 	def create
 		@trip = Trip.create(trip_params)
-		redirect_to root_path
+		# session[:trip_id] = @trip.id
+		@user = User.find(session[:id]) #why do I have to restate this? 
+		redirect_to user_trip_path(@user.id, @trip.id) 
+	end
+
+	def show
 	end
 
 	private
