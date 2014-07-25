@@ -1,17 +1,13 @@
 class TripsController < ApplicationController
 	
 	def new
+		@user = User.find(1) #change to reflect whoever is signed in using sessions
 		@trip = Trip.new 
 	end
 
 	def create
 		@trip = Trip.create(trip_params)
 		redirect_to root_path
-	end
-
-	def show
-		#show trip after it's created 
-		# user_trip_path(@trip.id)
 	end
 
 	private

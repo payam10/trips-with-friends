@@ -1,5 +1,5 @@
 <div class="trip_form">
-	<%= form_for :trip do |f| %>  <!-- why does it have to be :trip and not @trip? -->
+	<%= form_for [@user, @trip] do |f| %>  
 		
 		<%= f.label :where, "Where?" %><br/>
 		<%= f.text_field :where, placeholder: "Hawaii" %><br>
@@ -11,7 +11,7 @@
 		<%= f.label :price_per_person, "Price per person? (Approximately)" %><br/>
 		<%= f.text_field :price_per_person, placeholder: "$550" %><br>
 
-		<%= f.submit "Create Trip Idea" %>
+		<%= f.submit "Create Trip Idea"%>
 	<% end %>
 </div>
 
