@@ -3,7 +3,7 @@ body {
 	background-position: center top;
 	background-size: 100% auto;
 	background-repeat: no-repeat;
-	background-attachment:fixed;
+	/*background-attachment:fixed;*/
 }
 /*
 margin: 25px 50px 75px 100px;
@@ -54,7 +54,6 @@ left margin is 100px
 	.user_form input {
 		padding: 10px 50px 0 0;
 	}
-
 
 /* IN APPLICATION HTML ERB FILE */
 
