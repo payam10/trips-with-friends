@@ -1,7 +1,6 @@
 class SessionsController < ApplicationController
-	def check_user
-		#verify user's email and password
-		#if valid, redirect, else do not 
+	def users_login
+		#check if user email and password is valid
+		@user = User.new 
 	end
-
 end

@@ -15,12 +15,18 @@ class UsersController < ApplicationController
 		# puts "Submit button is communicating with create method in user controller"
 		# puts "PARAMS: #{params.inspect}"
 		# puts '$' * 100
-		puts '$' * 100
 		@user = User.create(user_params)
-		puts @user
-		puts '$' * 100
+		if @user.save!
+			session[@user.id] = @user.id
+			puts '$' * 100
+			puts session[@user.id]
+			puts '$' * 100
 
-		redirect_to root_path
+			redirect_to root_path
+		else
+			redirect_to root_path		
+		end
+
 	end
 
 	private #why?
