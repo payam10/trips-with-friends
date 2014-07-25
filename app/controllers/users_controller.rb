@@ -22,7 +22,7 @@ class UsersController < ApplicationController
 			puts session[@user.id]
 			puts '$' * 100
 
-			redirect_to root_path
+			redirect_to new_user_trip_path(@user.id) #take user to the 'create a trip' page 
 		else
 			redirect_to root_path		
 		end

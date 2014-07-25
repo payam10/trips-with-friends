@@ -6,7 +6,8 @@ Rails.application.routes.draw do
 
   root :to => 'users#index'
 
-  get '/sessions/login/users' => 'sessions#users_login', as: :users_login
+  get '/sessions/login/users' => 'sessions#users_login', as: :users_login #change route?
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

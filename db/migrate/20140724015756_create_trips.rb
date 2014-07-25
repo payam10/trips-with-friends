@@ -4,6 +4,7 @@ class CreateTrips < ActiveRecord::Migration
     	t.string :where
     	t.string :when  
     	t.integer :price_per_person
+    	t.belongs_to :user
 
       t.timestamps
     end

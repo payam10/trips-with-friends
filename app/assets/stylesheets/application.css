@@ -55,6 +55,15 @@ left margin is 100px
 		padding: 10px 50px 0 0;
 	}
 
+.trip_form {
+	color: #fff;
+	width: 40%;
+}
+
+	.trip_form input {
+		padding: 10px 50px 0 0;
+	}
+
 /* IN APPLICATION HTML ERB FILE */
 
 /*#website {

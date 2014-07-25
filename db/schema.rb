@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20140724015756) do
     t.string   "where"
     t.string   "when"
     t.integer  "price_per_person"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
