@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+# Use devise for authentication
+gem 'devise'
+# Use postgreSQL as the database
 gem 'pg'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.2'
