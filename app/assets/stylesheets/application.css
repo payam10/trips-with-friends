@@ -65,11 +65,11 @@ left margin is 100px
 	}
 
 /* IN APPLICATION HTML ERB FILE */
-
-/*#website {
+/*
+#website {
 	margin: 25px 50px 75px 100px;
-}*/
-
+}
+*/
 
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
